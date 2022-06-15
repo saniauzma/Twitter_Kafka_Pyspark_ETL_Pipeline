@@ -4,11 +4,8 @@ import tweepy
 from tweepy import StreamingClient
 
 
-#api_key = "yPu5p6GZ2Ioj3kwfiEVor4NcX"
-#api_key_secret = "hHbrux9tTWjgqRpK1G1J0NZT3ilHfOiCposnnnZT7nKqBcISXC"
-#access_token = "1533020502327185408-r1Kj7tsmONrQVYkiAsprQsAUHhn5Hc"
-#access_token_secret = "cW0nDGPKzAMmzeYWCEXHcSRd2U6ckkQcgr7Yj0RLGWuDR"
-access_bearer_token = "AAAAAAAAAAAAAAAAAAAAANxTdQEAAAAAXiis47XeMFxuerupH4poMSfJJas%3D1TuvkdXgUt2FjpKG7WUg99Xb1cSEBEUILh6bPuRBIQal6v1JYi"
+
+access_bearer_token = ""
 
 TOPIC_NAME = 'twitter'
 KAFKA_SERVER = 'localhost:9092'
