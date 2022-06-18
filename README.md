@@ -87,11 +87,14 @@ rule 1: search for value "python" and tag "python"
 
 How a API response looks?
 
-[This from API's Docs](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/tweet) will illustrates the structure for the tweet object
+[This Twitter API v2 data dictionary ](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/tweet) from API's Docs will illustrates the structure for the tweet object
+
+In this project I have filtered ‘root-level’ fields, such as ```id, text, and created_at```
+
+To learn more about filtered stream please refer Twitter API's [official Docs](https://developer.twitter.com/en/docs/twitter-api/tweets/filtered-stream/introduction)
 
 
 
-In this project I have filtered ‘root-level’ fields, such as id, text, and created_at.
 
 
 
