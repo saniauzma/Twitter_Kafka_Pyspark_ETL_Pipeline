@@ -10,3 +10,11 @@
 
 
 
+## Pipeline Consists of following modules:
+
+- Twitter API
+- Twitter Python Wrapper : Tweepy
+- Apache Kafka for producing data stream
+- Pyspark streaming for reading the stream data
+
+
