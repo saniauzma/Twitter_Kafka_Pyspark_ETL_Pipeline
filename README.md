@@ -41,7 +41,10 @@ To install [this](https://www.youtube.com/watch?v=mdcIdzYHFlw) YT video might be
 To start all kafka services 
 ```sh
 confluent local services start
+
 ```
+
+For getting stream data from twitter we be using Twitter API. Go to [Twitter Developer Platform](https://developer.twitter.com/en) to create an app and save the credentials that wil be used to login to the app.
 
 
 
