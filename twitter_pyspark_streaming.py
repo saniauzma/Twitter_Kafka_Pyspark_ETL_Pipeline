@@ -1,5 +1,5 @@
 #command to run this file: spark-submit spark_tw.py
-#spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.2 spark_tw.py
+#spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.2 twitter_pyspark_streaming.py
 
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import *
