@@ -5,7 +5,8 @@
 # Architecture
 
 
-![Slide1](https://user-images.githubusercontent.com/73434008/174433585-f5971154-232b-4497-b626-5b7b2875fa1c.JPG)
+![Slide1](https://user-images.githubusercontent.com/73434008/174433633-f1e926fa-6b4c-4a4f-ab35-5a995c035654.JPG)
+
 
 
 
