@@ -31,7 +31,7 @@ Data is captured in real time from the Twitter API, using the Tweepy Python wrap
 #### OS Used : WSL Ubuntu 
 #### Python : Python 3.7.1
 #### Setting up Kafka :
-- Installed and ran confluent kafka locally on Ubuntu.
+- Installed and ran [confluent kafka](https://www.confluent.io/) locally on Ubuntu.
 
 We can download by running below command: 
 ```sh
