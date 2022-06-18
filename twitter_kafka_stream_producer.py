@@ -24,9 +24,9 @@ DisplayTweet = DisplayTweet(access_bearer_token, wait_on_rate_limit=True)
 
 # Add filters to track mentions
 rule = tweepy.StreamRule(value="python", tag="python")
-rule2 = tweepy.StreamRule(value='Dalle 2', tag='dalle2')
+#rule2 = tweepy.StreamRule(value='Dalle 2', tag='dalle2')
 
-#Since BTS tweets are always coming, stream have many tweets to display
+#Since BTS is mainstream, many tweets will be coming per second, which will illustrate different size of batch each second
 rule2 = tweepy.StreamRule(value='BTS', tag='BTS')
 DisplayTweet.add_rules(add=[rule, rule2])
 
