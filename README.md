@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/73434008/174433559-4d7a1026-333d-4631-baab-5b729664e775.png)
 
-# Architecture
+## Architecture
 
 
 
@@ -20,7 +20,7 @@
 - Pyspark streaming for reading the stream data
 
 
-### Overview
+## Overview
 
 Data is captured in real time from the Twitter API, using the Tweepy Python wrapper (View usage - [Data Producer Module](https://github.com/saniauzma/Twitter_Kafka_Pyspark_ETL_Pipeline/blob/main/twitter_kafka_stream_producer.py)). The data collected from the Twitter API is streamed using kafka producer and published to kafka topic. Spark streaming is used to connect to the kafka server and print the real-time tweets data to the console for now.
 
