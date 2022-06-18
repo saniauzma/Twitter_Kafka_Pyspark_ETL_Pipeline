@@ -33,9 +33,10 @@ Data is captured in real time from the Twitter API, using the Tweepy Python wrap
 #### Setting up Kafka :
 Installed and ran confluent kafka locally on Ubuntu
 
-You can install by running below command: 
-'code()' curl -O http://packages.confluent.io/archive/7.1/confluent-community-7.1.1.tar.gz
-
+You can download by running below command: 
+```sh
+curl -O http://packages.confluent.io/archive/7.1/confluent-community-7.1.1.tar.gz
+```
 
 
  
