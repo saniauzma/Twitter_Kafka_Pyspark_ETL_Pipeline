@@ -124,6 +124,41 @@ Install using requirement.txt :
 pip install -r /path/to/requirements.txt
 ```
 
+### Tweepy
+
+[Tweepy Doc](https://docs.tweepy.org/en/stable/index.html)
+
+- Installing using pip ``` pip install tweepy ```
+- Tweepy has Twitter API v2 reference. We can connect using [```tweepy.StreamingClient```](https://docs.tweepy.org/en/stable/streamingclient.html) to filter and sample realtime Tweets.
+- Usage - [twitter_kafka_stream_producer Module](https://github.com/saniauzma/Twitter_Kafka_Pyspark_ETL_Pipeline/blob/main/twitter_kafka_stream_producer.py)
+
+### kafka-python
+
+[kafka-python Docs](https://kafka-python.readthedocs.io/en/master/#)
+- Installing using pip ``` pip install kafka-python ```
+- Used kafka-python to produce tweets data stream to the kafka topic.
+- Usage - [twitter_kafka_stream_producer Module](https://github.com/saniauzma/Twitter_Kafka_Pyspark_ETL_Pipeline/blob/main/twitter_kafka_stream_producer.py)
+
+
+### pyspark
+
+[pyspark-3.2.1 Docs](https://spark.apache.org/docs/latest/api/python/getting_started/install.html)
+
+- Installing using pip ``` pip install pyspark ```
+- To read the stream from the kafka producer spark structured streaming is used.
+- Here's the schema of the final output to the console : 
+```python
+ twitter_schema = StructType([
+        StructField("created_at", StringType(), False),
+        StructField("id",         StringType(), False),
+        StructField("text",       StringType(), False)])
+        
+```
+- Usage - [twitter_pyspark_streaming Module](https://github.com/saniauzma/Twitter_Kafka_Pyspark_ETL_Pipeline/blob/main/twitter_pyspark_streaming.py)
+- Submit the spark job using below command : 
+- ```sh
+spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.2 twitter_pyspark_streaming.py
+```
 
 
 
