@@ -30,20 +30,20 @@ Data is captured in real time from the Twitter API, using the Tweepy Python wrap
 
 #### OS Used : WSL Ubuntu 
 #### Setting up Kafka :
-Installed and ran confluent kafka locally on Ubuntu
+Installed and ran confluent kafka locally on Ubuntu.
 
-You can download by running below command: 
+We can download by running below command: 
 ```sh
 curl -O http://packages.confluent.io/archive/7.1/confluent-community-7.1.1.tar.gz
 ```
 To install [this](https://www.youtube.com/watch?v=mdcIdzYHFlw) YT video might be helpful.
 
-To start all kafka services 
+To start all kafka services run : 
 ```sh
 confluent local services start
 
 ```
-following services will be up and running
+following services will be up and running.
 ```sh
 ZooKeeper is [UP]
 Kafka is [UP]
@@ -53,7 +53,7 @@ Connect is [UP]
 ksqlDB Server is [UP]
 Control Center is [UP]
 ```
-Go to localhost:9021 and create a topic named "twitter" in the confluent kafka cluster
+Go to localhost:9021 and create a topic named "twitter" in the confluent kafka cluster.
 
 To verify if kafka is working fine, we can run producer and consumer in separate terminals and produce and consume data.
 
@@ -83,15 +83,16 @@ access_token_secret = ""
 ```
 In this project I have used Twitter API V2, because it has the filtered stream endpoint that lets you filter real time stream of public tweets by applying a set of rules.
 For Example: 
-rule 1: search for value "python" and tag "python"
 
-How a API response looks?
+rule 1 - search for value "python" and tag "python".
 
-[This Twitter API v2 data dictionary ](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/tweet) from API's Docs will illustrates the structure for the tweet object
+How does an API response looks?
+
+[This Twitter API v2 data dictionary ](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/tweet) from API's Docs will illustrates the structure for the tweet object.
 
 In this project I have filtered ‘root-level’ fields, such as ```id, text, and created_at```
 
-To learn more about filtered stream please refer Twitter API's [official Docs](https://developer.twitter.com/en/docs/twitter-api/tweets/filtered-stream/introduction)
+To learn more about filtered stream please refer Twitter API's [official Docs](https://developer.twitter.com/en/docs/twitter-api/tweets/filtered-stream/introduction).
 
 
 
