@@ -99,6 +99,30 @@ In this project I have filtered ‘root-level’ fields, such as ```id, text, an
 - More fields like [user fields](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/user), [media fields](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/media), etc. can be filtered.
 
 - To learn more about filtered stream please refer Twitter API's [official Docs](https://developer.twitter.com/en/docs/twitter-api/tweets/filtered-stream/introduction).
+### Setting up a virtual environment 
+- Install python3-venv : 
+```sh
+sudo apt install python3-venv
+```
+- Create a virtual environment : 
+```sh
+python3 -m venv env
+```
+- Activate venv :
+```sh
+source env/bin/activate
+```
+
+### Installing required Python libraries 
+In this project, mainly three Python libraries are used.
+- tweepy 
+- kafka-python
+- pyspark (make sure it's version compatible with python's version)
+
+Install using requirement.txt : 
+```sh
+pip install -r /path/to/requirements.txt
+```
 
 
 
