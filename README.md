@@ -24,7 +24,7 @@
 
 Data is captured in real time from the Twitter API, using the Tweepy Python wrapper (View usage - [Data Producer Module](https://github.com/saniauzma/Twitter_Kafka_Pyspark_ETL_Pipeline/blob/main/twitter_kafka_stream_producer.py)). The data collected from the Twitter API is streamed using kafka producer and published to kafka topic. Spark streaming is used to connect to the kafka server and print the real-time tweets data to the console for now.
 
-< ETL Flow >
+<!-- ### ETL Flow -->
 
 ## Environment Setup
 
@@ -43,10 +43,10 @@ To start all kafka services
 confluent local services start
 
 ```
-Go to localhost:9021 and create a topic named "twitter" in the cluster
+Go to localhost:9021 and create a topic named "twitter" in the confluent kafka cluster
 
 ### Creating Twitter App
-For getting stream data from twitter we be using Twitter API. Go to [Twitter Developer Platform](https://developer.twitter.com/en) to create an app and save the credentials that wil be used to login to the app.
+For getting stream data from twitter I have used Twitter API. Go to [Twitter Developer Platform](https://developer.twitter.com/en) to create an app and save the credentials that will be used to login to the app.
 
 
 ```python
@@ -59,6 +59,8 @@ access_token = ""
 access_token_secret = ""
 ```
 In this project I have used Twitter API V2, because it has the filtered stream endpoint that lets you filter real time stream of public tweets by applying a set of rules.
+For Example: 
+rule 1: search for value "python" and tag "python"
 
 
 
