@@ -108,7 +108,7 @@ sudo apt install python3-venv
 ```sh
 python3 -m venv env
 ```
-- Activate venv :
+- Activate env :
 ```sh
 source env/bin/activate
 ```
