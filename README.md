@@ -77,7 +77,7 @@ kafka-console-consumer --topic twitter --bootstrap-server localhost:9092 --from-
 
 
 ```python
-#crdentials
+#credentials
 
 api_key = ""         #aka consumer_key
 api_ket_secret = ""  #aka consumer_key_secret
