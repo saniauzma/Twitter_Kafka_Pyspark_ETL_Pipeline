@@ -47,6 +47,10 @@ confluent local services start
 For getting stream data from twitter we be using Twitter API. Go to [Twitter Developer Platform](https://developer.twitter.com/en) to create an app and save the credentials that wil be used to login to the app.
 
 
+```python
+#crdentials
+```
+In this project I have used Twitter API V2.because of filtered stream
 
 
 
