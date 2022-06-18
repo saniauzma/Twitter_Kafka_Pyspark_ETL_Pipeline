@@ -126,7 +126,7 @@ pip install -r requirements.txt
 
 ### Tweepy
 
-[Tweepy Doc](https://docs.tweepy.org/en/stable/index.html)
+[tweepy Doc](https://docs.tweepy.org/en/stable/index.html)
 
 - Installing using pip ``` pip install tweepy ```
 - Tweepy has Twitter API v2 reference. We can connect using [```tweepy.StreamingClient```](https://docs.tweepy.org/en/stable/streamingclient.html) to filter and sample realtime Tweets.
