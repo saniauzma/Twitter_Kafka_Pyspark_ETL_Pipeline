@@ -24,8 +24,7 @@
 
 Data is captured in real time from the Twitter API, using the Tweepy Python wrapper (View usage - [Data Producer Module](https://github.com/saniauzma/Twitter_Kafka_Pyspark_ETL_Pipeline/blob/main/twitter_kafka_stream_producer.py)). The data collected from the Twitter API is streamed using kafka producer and published to kafka topic. Spark streaming is used to connect to the kafka server and print the real-time tweets data to the console for now.
 
-//## ETL Flow
-
+/* ETL Flow */
 
 ## Environment Setup
 
@@ -37,9 +36,13 @@ You can download by running below command:
 ```sh
 curl -O http://packages.confluent.io/archive/7.1/confluent-community-7.1.1.tar.gz
 ```
+To install [this](https://www.youtube.com/watch?v=mdcIdzYHFlw) YT video might be helpful.
 
+To start all kafka services 
+```sh
+confluent local services start
+```
 
- 
 
 
 
