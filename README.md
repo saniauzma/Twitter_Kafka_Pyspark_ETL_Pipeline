@@ -49,8 +49,15 @@ For getting stream data from twitter we be using Twitter API. Go to [Twitter Dev
 
 ```python
 #crdentials
+
+api_key = ""
+api_ket_secret = ""
+bearer_token = ""
+access_token = ""
+access_token_secret = ""
 ```
-In this project I have used Twitter API V2.because of filtered stream
+In this project I have used Twitter API V2, because it has the filtered stream endpoint that lets you filter real time stream of public tweets by applying a set of rules.
+
 
 
 
