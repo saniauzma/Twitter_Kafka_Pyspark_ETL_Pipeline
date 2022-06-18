@@ -90,7 +90,7 @@ For Example:
 
 rule 1 - search for value "python" and tag "python".
 
-- How does an API response looks?
+- How does an API response look?
 
 [This Twitter API v2 data dictionary ](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/tweet) from API's Docs will illustrates the structure for the tweet object.
 
