@@ -121,7 +121,7 @@ In this project, mainly three Python libraries are used.
 
 Install using requirement.txt : 
 ```sh
-pip install -r /path/to/requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Tweepy
