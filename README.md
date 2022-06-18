@@ -128,14 +128,14 @@ pip install -r requirements.txt
 
 [Tweepy Doc](https://docs.tweepy.org/en/stable/index.html)
 
-- Installing using pip ```sh pip install tweepy ```
+- Installing using pip ``` pip install tweepy ```
 - Tweepy has Twitter API v2 reference. We can connect using [```tweepy.StreamingClient```](https://docs.tweepy.org/en/stable/streamingclient.html) to filter and sample realtime Tweets.
 - Usage - [twitter_kafka_stream_producer Module](https://github.com/saniauzma/Twitter_Kafka_Pyspark_ETL_Pipeline/blob/main/twitter_kafka_stream_producer.py)
 
 ### kafka-python
 
 [kafka-python Docs](https://kafka-python.readthedocs.io/en/master/#)
-- Installing using pip ```sh pip install kafka-python ```
+- Installing using pip ``` pip install kafka-python ```
 - Used kafka-python to produce tweets data stream to the kafka topic.
 - Usage - [twitter_kafka_stream_producer Module](https://github.com/saniauzma/Twitter_Kafka_Pyspark_ETL_Pipeline/blob/main/twitter_kafka_stream_producer.py)
 
@@ -144,7 +144,7 @@ pip install -r requirements.txt
 
 [pyspark-3.2.1 Docs](https://spark.apache.org/docs/latest/api/python/getting_started/install.html)
 
-- Installing using pip ```sh pip install pyspark ```
+- Installing using pip ``` pip install pyspark ```
 - To read the stream from the kafka producer spark structured streaming is used.
 - Here's the schema of the final output to the console : 
 ```python
