@@ -56,6 +56,7 @@ Control Center is [UP]
 Go to localhost:9021 and create a topic named "twitter" in the confluent kafka cluster
 
 To verify if kafka is working fine, we can run producer and consumer in separate terminals and produce and consume data.
+
 Producer command : 
 ```sh
 kafka-console-producer --topic twitter --broker-list localhost:9092
@@ -83,6 +84,14 @@ access_token_secret = ""
 In this project I have used Twitter API V2, because it has the filtered stream endpoint that lets you filter real time stream of public tweets by applying a set of rules.
 For Example: 
 rule 1: search for value "python" and tag "python"
+
+How a API response looks?
+
+[This from API's Docs](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/tweet) will illustrates the structure for the tweet object
+
+
+
+In this project I have filtered ‘root-level’ fields, such as id, text, and created_at.
 
 
 
