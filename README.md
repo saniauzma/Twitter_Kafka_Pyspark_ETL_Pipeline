@@ -4,15 +4,16 @@
 
 # Architecture
 
+![Slide1](https://user-images.githubusercontent.com/73434008/174433785-7f9d2e41-3009-4bb5-a211-2d32914cbc44.JPG)
 
-![Slide1](https://user-images.githubusercontent.com/73434008/174433633-f1e926fa-6b4c-4a4f-ab35-5a995c035654.JPG)
+
 
 
 
 
 ## Pipeline Consists of following modules:
 
-- Twitter API
+- Twitter API V2
 - Twitter Python Wrapper : Tweepy
 - Apache Kafka for producing data stream
 - Pyspark streaming for reading the stream data
