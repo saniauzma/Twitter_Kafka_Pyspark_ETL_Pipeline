@@ -29,8 +29,9 @@ Data is captured in real time from the Twitter API, using the Tweepy Python wrap
 ## Environment Setup
 
 #### OS Used : WSL Ubuntu 
+#### Python : Python 3.7.1
 #### Setting up Kafka :
-Installed and ran confluent kafka locally on Ubuntu.
+- Installed and ran confluent kafka locally on Ubuntu.
 
 We can download by running below command: 
 ```sh
@@ -38,7 +39,7 @@ curl -O http://packages.confluent.io/archive/7.1/confluent-community-7.1.1.tar.g
 ```
 To install [this](https://www.youtube.com/watch?v=mdcIdzYHFlw) YT video might be helpful.
 
-To start all kafka services run : 
+- To start all kafka services run : 
 ```sh
 confluent local services start
 
@@ -53,9 +54,9 @@ Connect is [UP]
 ksqlDB Server is [UP]
 Control Center is [UP]
 ```
-Go to localhost:9021 and create a topic named "twitter" in the confluent kafka cluster.
+- Go to localhost:9021 and create a topic named "twitter" in the confluent kafka cluster.
 
-To verify if kafka is working fine, we can run producer and consumer in separate terminals and produce and consume data.
+- To verify if kafka is working fine, we can run producer and consumer in separate terminals and produce and consume data.
 
 Producer command : 
 ```sh
@@ -69,7 +70,10 @@ kafka-console-consumer --topic twitter --bootstrap-server localhost:9092 --from-
 
 
 ### Creating Twitter App
-For getting stream data from twitter I have used Twitter API. Go to [Twitter Developer Platform](https://developer.twitter.com/en) to create an app and save the credentials that will be used to login to the app.
+
+[Twitter API Docs](https://developer.twitter.com/en/docs)
+
+- For getting stream data from twitter I have used Twitter API. Go to [Twitter Developer Platform](https://developer.twitter.com/en) to create an app and save the credentials that will be used to login to the app.
 
 
 ```python
@@ -81,18 +85,20 @@ bearer_token = ""
 access_token = ""
 access_token_secret = ""
 ```
-In this project I have used Twitter API V2, because it has the filtered stream endpoint that lets you filter real time stream of public tweets by applying a set of rules.
+- In this project I have used Twitter API V2, because it has the filtered stream endpoint that lets you filter real time stream of public tweets by applying a set of rules.
 For Example: 
 
 rule 1 - search for value "python" and tag "python".
 
-How does an API response looks?
+- How does an API response looks?
 
 [This Twitter API v2 data dictionary ](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/tweet) from API's Docs will illustrates the structure for the tweet object.
 
 In this project I have filtered ‘root-level’ fields, such as ```id, text, and created_at```
 
-To learn more about filtered stream please refer Twitter API's [official Docs](https://developer.twitter.com/en/docs/twitter-api/tweets/filtered-stream/introduction).
+- More fields like [user fields](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/user), [media fields](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/media), etc. can be filtered.
+
+- To learn more about filtered stream please refer Twitter API's [official Docs](https://developer.twitter.com/en/docs/twitter-api/tweets/filtered-stream/introduction).
 
 
 
