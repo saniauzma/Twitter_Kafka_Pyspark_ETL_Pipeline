@@ -156,7 +156,7 @@ pip install -r /path/to/requirements.txt
 ```
 - Usage - [twitter_pyspark_streaming Module](https://github.com/saniauzma/Twitter_Kafka_Pyspark_ETL_Pipeline/blob/main/twitter_pyspark_streaming.py)
 - Submit the spark job using below command : 
-- ```sh
+```sh
 spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.2 twitter_pyspark_streaming.py
 ```
 
