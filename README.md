@@ -43,7 +43,29 @@ To start all kafka services
 confluent local services start
 
 ```
+following services will be up and running
+```sh
+ZooKeeper is [UP]
+Kafka is [UP]
+Schema Registry is [UP]
+Kafka REST is [UP]
+Connect is [UP]
+ksqlDB Server is [UP]
+Control Center is [UP]
+```
 Go to localhost:9021 and create a topic named "twitter" in the confluent kafka cluster
+
+To verify if kafka is working fine, we can run producer and consumer in separate terminals and produce and consume data.
+Producer command : 
+```sh
+kafka-console-producer --topic twitter --broker-list localhost:9092
+```
+Consumer command : 
+```sh
+kafka-console-consumer --topic twitter --bootstrap-server localhost:9092 --from-beginning
+```
+
+
 
 ### Creating Twitter App
 For getting stream data from twitter I have used Twitter API. Go to [Twitter Developer Platform](https://developer.twitter.com/en) to create an app and save the credentials that will be used to login to the app.
@@ -61,6 +83,8 @@ access_token_secret = ""
 In this project I have used Twitter API V2, because it has the filtered stream endpoint that lets you filter real time stream of public tweets by applying a set of rules.
 For Example: 
 rule 1: search for value "python" and tag "python"
+
+
 
 
 
