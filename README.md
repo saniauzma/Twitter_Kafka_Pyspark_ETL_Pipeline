@@ -162,7 +162,9 @@ spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.2 twitter
 
 ## Demonstration of the twitter data stream, by running the modules in separate terminals : 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/T0TW_gF-O3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[![demonstration video_Trim_Moment](https://user-images.githubusercontent.com/73434008/174490056-5554e77a-a80f-42c8-8fd0-c62511703ab1.jpg)](https://www.youtube.com/watch?v=T0TW_gF-O3c)
+
 
 
 
