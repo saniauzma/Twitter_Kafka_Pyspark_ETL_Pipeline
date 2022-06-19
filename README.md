@@ -114,6 +114,10 @@ virtualenv env
 ```sh
 source env/bin/activate
 ```
+- Deactivate env :
+```sh
+deactivate
+```
 
 ### Installing required Python libraries 
 In this project, mainly three Python libraries are used.
