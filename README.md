@@ -166,6 +166,24 @@ spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.2 twitter
 [![demonstration video_Trim_Moment](https://user-images.githubusercontent.com/73434008/174490056-5554e77a-a80f-42c8-8fd0-c62511703ab1.jpg)](https://www.youtube.com/watch?v=T0TW_gF-O3c)
 
 
+Note : 
+- Once we are done, we can stop all services using below command : 
+
+```sh
+
+confluent local services stop
+```
+- Once closed if we want to clean all data in topic then :
+
+```sh
+confluent local destroy
+
+```
+
+
+
+
+
 
 
 
