@@ -99,14 +99,16 @@ In this project I have filtered ‘root-level’ fields, such as ```id, text, an
 - More fields like [user fields](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/user), [media fields](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/media), etc. can be filtered.
 
 - To learn more about filtered stream please refer Twitter API's [official Docs](https://developer.twitter.com/en/docs/twitter-api/tweets/filtered-stream/introduction).
+
+
 ### Setting up a virtual environment 
-- Install python3-venv : 
+- Install virtualenv : 
 ```sh
-sudo apt install python3-venv
+pip install virtualenv
 ```
 - Create a virtual environment : 
 ```sh
-python3 -m venv env
+virtualenv env
 ```
 - Activate env :
 ```sh
