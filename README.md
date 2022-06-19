@@ -160,6 +160,11 @@ pip install -r requirements.txt
 spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.2 twitter_pyspark_streaming.py
 ```
 
+## Demonstration of the twitter data stream, by running the modules in separate terminals : 
+
+
+
+
 
 
 
