@@ -183,8 +183,9 @@ confluent local destroy
 
 
 
-
-
+Next steps : 
+- Here in this project, I am only printing the streaming data to console, as the next step some data processing will be done in Spark Streaming.
+- Pipeline orchaestration with Apache Airflow.
 
 
 
